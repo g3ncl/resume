@@ -1,0 +1,132 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[italian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+	\begin{center}
+		\textbf{\Huge \scshape Claudio Genovese} \\ \vspace{8pt}
+		\href{mailto:genovese.claudio997@gmail.com}{\underline{genovese.claudio997@gmail.com}} $|$ 
+		\href{https://linkedin.com/in/claudiogenovese}{\underline{linkedin.com/in/claudiogenovese}} $|$
+		\href{https://github.com/g3ncl}{\underline{github.com/g3ncl}} $|$ 
+		\href{https://g3n.cl}{\underline{g3n.cl}}
+	\end{center}
+
+	\section{Esperienza}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Software Engineer}{Dic 2022 -- Presente}
+	{NTT DATA Italia, Customer Experience}{Milano, Italia}
+	
+	\resumeItemListStart
+	\resumeItem{Sviluppo software Fullstack: Esperto in Java e SQL per applicazioni backend robuste, estendo senza soluzione di continuità la mia competenza al frontend. Utilizzando React e Next.js, creo interfacce utente dinamiche e reattive con un focus sulla modularità e integrazione senza soluzione di continuità. Questo approccio full-stack mi consente di creare soluzioni end-to-end che sono efficienti e user-friendly.}
+	\resumeItem{Risoluzione proattiva dei problemi: Adottando una posizione proattiva nella risoluzione dei problemi, identifico attivamente e affronto le sfide tecniche durante tutto il ciclo di sviluppo. Il mio coinvolgimento nella risoluzione dei bug, nel troubleshooting e nell'ottimizzazione delle prestazioni garantisce la consegna di soluzioni software robuste ed efficienti.}
+	\resumeItem{Documentazione completa: La creazione meticolosa di documentazione tecnica e funzionale dettagliata rappresenta una pietra angolare delle mie responsabilità. Questa documentazione non solo chiarisce l'architettura del software e le decisioni di design, ma rappresenta anche una risorsa preziosa sia per gli stakeholder interni che per gli utenti finali.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+
+	\section{Istruzione}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Laurea in Ingegneria Informatica (non completata)}{Set 2016 -- Ago 2022}
+	{Politecnico di Milano}{Milano, Italia}
+	\resumeItemListStart
+	\resumeItem{Gli esami sostenuti includono: Database, Reti, Sistemi Informativi, Architettura di Computer e Sistemi Operativi, Fondamenti di Informatica, Logica e Algebra}
+	\resumeItemListEnd
+	
+	\vspace{4pt}
+	\resumeSubheading
+	{Diploma di Liceo Scientifico}{Set 2011 -- Lug 2016}
+	{Liceo Scientifico Galileo Galilei}{Potenza, Italia}
+	\resumeItemListStart
+	\resumeItem{Voto finale: 78/100}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+
+	\section{Competenze Tecniche}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Linguaggi}{: Javascript, Typescript, Java, Python, SQL, HTML/CSS3} \\
+				\textbf{Framework}{: Next.js, Bulma} \\
+				\textbf{Strumenti di Sviluppo}{: Git, Docker, VS Code, PyCharm} \\
+				\textbf{Librerie}{: React, Material-UI, pandas, NumPy, Matplotlib, Selenium}
+		}}
+	\end{itemize}
+
+\end{document}
+

@@ -1,0 +1,26 @@
+name: Compile LaTeX Resumes
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up LaTeX environment
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: |
+            resume-en.tex
+            resume-it.tex
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            resume-en.pdf
+            resume-it.pdf

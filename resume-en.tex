@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Claudio Genovese
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	
+	
+	\begin{center}
+		\textbf{\Huge \scshape Claudio Genovese} \\ \vspace{8pt}
+		\href{mailto:genovese.claudio997@gmail.com}{\underline{genovese.claudio997@gmail.com}} $|$ 
+		\href{https://linkedin.com/in/claudiogenovese}{\underline{linkedin.com/in/claudiogenovese}} $|$
+		\href{https://github.com/g3ncl}{\underline{github.com/g3ncl}} $|$
+		\href{https://g3n.cl}{\underline{g3n.cl}}
+	\end{center}
+	
+	
+	
+	
+	
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	\vspace{4pt}
+	
+	\resumeSubheading
+	{Software Engineer}{Dec 2022 -- Present}
+	{NTT DATA Italia, Customer Experience}{Milan, Italy}
+	
+	\resumeItemListStart
+	\resumeItem{Fullstack Software Development: Fluent in Java and SQL for robust backend applications, I seamlessly extend my expertise to the frontend. Utilizing React and Next.js, I craft dynamic and responsive user interfaces with a focus on modularity and seamless integration. This full-stack approach allows me to create end-to-end solutions that are both efficient and user-friendly.}
+	\resumeItem{Proactive Problem Solving: Adopting a proactive stance towards problem-solving, I actively identify and address technical challenges throughout the development lifecycle. My involvement in debugging, troubleshooting, and performance optimization ensures the delivery of robust and efficient software solutions.}
+ \resumeItem{Comprehensive Documentation: Meticulously crafting detailed technical and functional documentation serves as a cornerstone of my responsibilities. This documentation not only elucidates software architecture and design decisions but also stands as an invaluable resource for internal stakeholders and end-users alike.}
+	
+	\resumeItemListEnd
+	
+	
+	
+	\resumeSubHeadingListEnd
+
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\vspace{4pt}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{BSc in Computer Engineering (not completed)}{Sep 2016 -- Aug 2022}
+{Politecnico di Milano} {Milan, Italy}
+	\resumeItemListStart
+	\resumeItem{Exams taken includes: Databases, Networks, Information Systems, Architecture of Computers and Operating Systems, Fundamentals of Computer Science, Logic and Algebra}
+	\resumeItemListEnd
+	
+	
+	\vspace{4pt}
+	\resumeSubheading
+	{Scientific High School Diploma}{Sep 2011 -- Jul 2016}
+	{Liceo Scientifico Galileo Galilei}{Potenza, Italy}
+		\resumeItemListStart
+	\resumeItem{Final Grade: 78/100}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%-----------PROJECTS-----------
+	%	\section{Projects}
+%	\resumeSubHeadingListStart
+%	\resumeProjectHeading
+%	{\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%	\resumeItemListStart
+%	\resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%	\resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%	\resumeItem{Visualized GitHub data to show collaboration}
+%	\resumeItem{Used Celery and Redis for asynchronous tasks}
+%	\resumeItemListEnd
+%	\resumeSubHeadingListEnd
+	
+	
+	
+	%
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Languages}{: Javascript, Typescript, Java, Python, SQL, HTML/CSS3} \\
+				\textbf{Frameworks}{: Next.js, Bulma} \\
+				\textbf{Developer Tools}{: Git, Docker, VS Code, PyCharm} \\
+				\textbf{Libraries}{: React, Material-UI, pandas, NumPy, Matplotlib, Selenium}
+		}}
+	\end{itemize}
+	
+	
+	%-------------------------------------------
+\end{document}
+
+
