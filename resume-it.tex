@@ -1,6 +1,14 @@
+%-------------------------
+% Resume in Latex
+% Author : Claudio Genovese
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -13,7 +21,7 @@
 \input{glyphtounicode}
 
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} 
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -50,6 +58,13 @@
 	\end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingWithoutLocation}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -69,9 +84,9 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
@@ -96,6 +111,21 @@
 	\resumeItem{Documentazione completa: La creazione meticolosa di documentazione tecnica e funzionale dettagliata rappresenta una pietra angolare delle mie responsabilità. Questa documentazione non solo chiarisce l'architettura del software e le decisioni di design, ma rappresenta anche una risorsa preziosa sia per gli stakeholder interni che per gli utenti finali.}
 	\resumeItemListEnd
 	
+	\resumeSubHeadingListEnd
+	\section{Certificazioni}
+	\resumeSubHeadingListStart
+	\resumeSubheadingWithoutLocation
+	{\href{https://learn.microsoft.com/api/credentials/share/en-us/ClaudioGenovese-4278/BA0AD04DE20802C7?sharingId=3EEC5AAB73F3537D}{Microsoft Certified: Azure AI Engineer Associate (AI-102)}}{Dic 2024}
+	{}{}
+	\resumeItem{Esperienza verificata sui principali servizi Azure per l'intelligenza artificiale, tra cui:}
+	\resumeItemListStart
+	\resumeItem{Pianificare e gestire una soluzione di Azure per intelligenza artificiale}
+	\resumeItem{Implementare soluzioni di moderazione del contenuto}
+	\resumeItem{Implementare soluzioni di Visione artificiale}
+	\resumeItem{Implementare soluzioni di elaborazione del linguaggio naturale}
+	\resumeItem{Implementare soluzioni di knowledge mining e di intelligence sui documenti}
+	\resumeItem{Implementare soluzioni di intelligenza artificiale generative}
+	\resumeItemListEnd
 	\resumeSubHeadingListEnd
 
 	\section{Istruzione}
