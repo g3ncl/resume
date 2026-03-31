@@ -4,9 +4,7 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
-
 \documentclass[letterpaper,11pt]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -20,55 +18,29 @@
 \usepackage{tabularx}
 \usepackage[a4paper, margin=1.5in]{geometry}
 \input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
-
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-% Sections formatting
 \titleformat{\section}{
 	\vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
 	\item\small{
 		{#1 \vspace{-2pt}}
 	}
 }
-
 \newcommand{\resumeSubheading}[4]{
 	\vspace{-2pt}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -76,154 +48,91 @@
 		\textit{\small#3} & \textit{\small #4} \\
 	\end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubheadingWithoutLocation}[4]{
 	\vspace{-2pt}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 	\end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubSubheading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\textit{\small#1} & \textit{\small #2} \\
 	\end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
 	\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\small#1 & #2 \\
 	\end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-	
-	%----------HEADING----------
-	
-	
 	\begin{center}
 		\textbf{\Huge \scshape Claudio Genovese} \\ \vspace{12pt}
-		\href{mailto:genovese.claudio997@gmail.com}{\underline{genovese.claudio997@gmail.com}} $|$ 
+		\href{mailto:genovese.claudio997@gmail.com}{\underline{genovese.claudio997@gmail.com}} $|$
 		\href{https://linkedin.com/in/claudiogenovese}{\underline{linkedin.com/in/claudiogenovese}} $|$
 		\href{https://github.com/g3ncl}{\underline{github.com/g3ncl}} $|$
 		\href{https://g3n.cl}{\underline{g3n.cl}}
 	\end{center}
-
-	
-	
-	
-	
-	%-----------EXPERIENCE-----------
 	\section{Experience}
 	\resumeSubHeadingListStart
-	\vspace{4pt}
-	
 	\resumeSubheading
-	{Fullstack Developer}{July 2025 -- Present}
+	{Software Engineer}{July 2025 -- Present}
 	{Laura S.p.A.}{Milan, Italy}
-	
 	\resumeItemListStart
-	\resumeItem{Early-Stage Development: Contributing to fullstack development initiatives in the foundational phase of the company, building core systems and establishing technical architecture from the ground up.}
+	\resumeItem{Design and development of backend microservices in \textbf{Go}, \textbf{Java} (Spring Boot \textbf{WebFlux/R2DBC}) and \textbf{Python} for a multi-tenant insurance platform.}
+	\resumeItem{Implementation of a high-performance \textbf{Redis} caching layer with Lua scripting for sub-millisecond pricing coefficient lookups, with atomic cache rebuilds and distributed locking to ensure consistency across multiple instances.}
+	\resumeItem{Development of event-driven pipelines (\textbf{SNS}/\textbf{SQS}) for asynchronous document generation and inter-service orchestration, with compensating action patterns to ensure consistency between \textbf{S3} storage and database.}
+	\resumeItem{Implementation of a rules engine with a custom parser for a domain-specific language, used for automated insurance risk assessment with configurable thresholds and testing against simulated data.}
+	\resumeItem{Development of operator dashboards and internal portals in \textbf{React}/\textbf{Next.js}.}
+	\resumeItem{Deployment on \textbf{Kubernetes} (\textbf{Amazon EKS}) infrastructure with \textbf{Aurora PostgreSQL}, \textbf{ElastiCache}, \textbf{Cognito} authentication and inter-service communication via JWTs signed with \textbf{AWS KMS}.}
 	\resumeItemListEnd
-	
 	\resumeSubheading
 	{Software Engineer}{Dec 2022 -- July 2025}
 	{NTT DATA Italia, Customer Experience}{Milan, Italy}
-	
 	\resumeItemListStart
 	\resumeItem{Fullstack Development: Developed robust applications using Java, SQL, React, and Next.js, creating end-to-end solutions with focus on modularity and user experience.}
 	\resumeItem{Problem Solving \& Optimization: Proactively identified and resolved technical challenges, performed debugging and performance optimization throughout the development lifecycle.}
 	\resumeItem{Technical Documentation: Created comprehensive technical and functional documentation for software architecture and design decisions.}
-	
 	\resumeItemListEnd
-
-
-    
 	\resumeSubHeadingListEnd
-
-
-	%-----------CERTIFICATIONS-----------
 	\section{Certifications}
 	\resumeSubHeadingListStart
 	\resumeSubheadingWithoutLocation
 	{\href{https://learn.microsoft.com/api/credentials/share/en-us/ClaudioGenovese-4278/BA0AD04DE20802C7?sharingId=3EEC5AAB73F3537D}{Microsoft Certified: Azure AI Engineer Associate (AI-102)}}{Dec 2024}
 	{}{}
-	\resumeItem{Validated expertise in key Azure AI domains including:}
-	\resumeItemListStart
-	\resumeItem{Plan and manage an Azure AI solution}
-	\resumeItem{Implement content moderation solutions}
-	\resumeItem{Implement computer vision solutions}
-	\resumeItem{Implement natural language processing solutions}
-	\resumeItem{Implement knowledge mining and document intelligence solutions}
-	\resumeItem{Implement generative AI solutions}
-	\resumeItemListEnd
+	\resumeItem{Certified expertise in designing and implementing Azure AI solutions, including computer vision, natural language processing, knowledge mining, content moderation and generative AI.}
 	\resumeSubHeadingListEnd
-	
-	%-----------EDUCATION-----------
 	\section{Education}
-	\vspace{4pt}
 	\resumeSubHeadingListStart
 	\resumeSubheading
 	{BSc in Computer Engineering (not completed)}{Sep 2016 -- Aug 2022}
-{Politecnico di Milano} {Milan, Italy}
+	{Politecnico di Milano}{Milan, Italy}
 	\resumeItemListStart
-	\resumeItem{Exams taken includes: Databases, Networks, Information Systems, Architecture of Computers and Operating Systems, Fundamentals of Computer Science, Logic and Algebra}
+	\resumeItem{Exams taken include: Databases, Networks, Information Systems, Architecture of Computers and Operating Systems, Fundamentals of Computer Science, Logic and Algebra}
 	\resumeItemListEnd
-	
-	
 	\vspace{4pt}
 	\resumeSubheading
 	{Scientific High School Diploma}{Sep 2011 -- Jul 2016}
 	{Liceo Scientifico Galileo Galilei}{Potenza, Italy}
-		\resumeItemListStart
+	\resumeItemListStart
 	\resumeItem{Final Grade: 78/100}
 	\resumeItemListEnd
 	\resumeSubHeadingListEnd
-	
-	%-----------PROJECTS-----------
-	%	\section{Projects}
-%	\resumeSubHeadingListStart
-%	\resumeProjectHeading
-%	{\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-%	\resumeItemListStart
-%	\resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-%	\resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-%	\resumeItem{Visualized GitHub data to show collaboration}
-%	\resumeItem{Used Celery and Redis for asynchronous tasks}
-%	\resumeItemListEnd
-%	\resumeSubHeadingListEnd
-	
-	
-	
-	%
-	%-----------PROGRAMMING SKILLS-----------
 	\section{Technical Skills}
 	\begin{itemize}[leftmargin=0.15in, label={}]
 		\small{\item{
-				\textbf{Languages}{: Javascript, Typescript, Java, Python, SQL, HTML/CSS3} \\
-				\textbf{Frameworks}{: Next.js, Bulma} \\
-				\textbf{Developer Tools}{: Git, Docker, VS Code, PyCharm} \\
-				\textbf{Libraries}{: React, Material-UI, pandas, NumPy, Matplotlib, Selenium}
+				\textbf{Languages}{: Go, Java, Python, TypeScript, SQL, HTML/CSS} \\
+				\textbf{Frameworks \& Libraries}{: Spring Boot (WebFlux, R2DBC), Gin, GORM, Next.js, React} \\
+				\textbf{Cloud \& DevOps}{: AWS (EKS, S3, SQS, SNS, Aurora, ElastiCache, Lambda, Cognito, KMS, Secrets Manager), Kubernetes, Docker} \\
+				\textbf{Database \& Caching}{: PostgreSQL (Aurora), Redis (Sorted Sets, Hashes, Lua scripting, EVALSHA)} \\
+				\textbf{Tools}{: Git, VS Code}
 		}}
 	\end{itemize}
-	
-	
-	%-------------------------------------------
 \end{document}
-
-
